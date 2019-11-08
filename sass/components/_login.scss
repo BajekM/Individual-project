@@ -1,0 +1,21 @@
+.top-menu .login {
+  text-align: center;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login .icon-login:before {
+  font-size: 23px;
+  margin: 0 10px;
+  color: $sidebar-font-color;
+  position: relative;
+  top: 2px;
+}
+
+.login h3 {
+  color: $login-color;
+  display: inline-block;
+  font-size: 16px;
+}

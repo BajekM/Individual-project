@@ -1,0 +1,13 @@
+.general-statistic hr {
+  border-top: 0.6px solid $sidebar-font-color;
+}
+
+.general-statistic .charts {
+  margin-left: 400px;
+  margin-top: 100px;
+}
+
+
+.general-statistic .image-wrapper {
+  @include centering;
+}

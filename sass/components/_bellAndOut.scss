@@ -1,0 +1,12 @@
+.top-menu .bell-and-out {
+  padding: 0;
+  text-align: center;
+  border-left: 0.6px solid $sidebar-font-color;
+  border-right: 0.6px solid $sidebar-font-color;
+}
+
+.bell-and-out .icon:before {
+  font-size: 23px;
+  color: $sidebar-font-color;
+  position: relative;
+}

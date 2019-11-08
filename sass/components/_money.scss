@@ -1,0 +1,31 @@
+.top-menu .money {
+  text-align: center;
+  padding: 0;
+  border-left: 0.6px solid $sidebar-font-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.money .icon-wallet:before {
+  font-size: 23px;
+  margin: 0 10px;
+  color: $sidebar-font-color;
+  position: relative;
+  top: 2px;
+}
+
+.top-menu h2 {
+  color: $sidebar-font-color;
+  display: inline-block;
+}
+
+
+.money .icon-arrow-down-small:before {
+  font-size: 15px;
+  color: $sidebar-font-color;
+  position: relative;
+  top: 2px;
+  font-weight: 100;
+  margin: 0 10px;
+}

@@ -1,0 +1,13 @@
+.top-menu {
+  width: 88%;
+  position: fixed;
+  right: 0;
+  border-bottom: 1px solid $sidebar-font-color;
+  height: 66.8px;
+  z-index: 100;
+  background-color: white;
+}
+
+.top-menu .row div {
+  @include centering;
+}

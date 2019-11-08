@@ -1,0 +1,18 @@
+body {
+  position: relative;
+}
+
+.inner {
+  position: absolute;
+  //left: 225.6px;
+  right: 0;
+  top: 66.8px;
+  background-color: $background-inner;
+  //width: calc(100% - 225.6px);
+}
+
+.inner section {
+  width: calc(100%-40px);
+  margin: 20px 20px;
+  background: white;
+}

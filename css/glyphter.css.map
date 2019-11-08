@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "glyphter.css",
+	"sources": [
+		"../sass/glyphter.scss"
+	],
+	"names": [],
+	"mappings": ""
+}

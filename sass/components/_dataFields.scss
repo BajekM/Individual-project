@@ -1,0 +1,26 @@
+.general-statistic .data {
+  margin: 0 auto;
+}
+
+.data .row {
+  @include centering;
+}
+
+.data .row div {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin: 20px;
+  align-items: center;
+  border-bottom: 1px solid $sidebar-font-color;
+}
+
+.general-statistic h5 {
+  display: inline-block;
+  color: $sidebar-font-color;
+  font-size: 16px;
+}
+
+.data .number {
+  text-align: center;
+}

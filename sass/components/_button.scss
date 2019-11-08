@@ -1,0 +1,12 @@
+button {
+  background-color: $button-color;
+  color: white;
+  font-size: 20px;
+  display: inline-block;
+  height: 40px;
+  margin: 0 10px;
+  border-radius: 10px;
+  border: none;
+  @include centering;
+}
+

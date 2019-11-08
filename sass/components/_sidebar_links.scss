@@ -1,0 +1,41 @@
+ul {
+  text-align: center;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+ul li {
+  display: block;
+  list-style-type: none;
+  color: $sidebar-font-color;
+  font-size: 17px;
+  font-weight: lighter;
+  text-align: left;
+  padding: 10px;
+  margin: 0;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+ul li a:visited {
+  color: $sidebar-font-color;
+}
+
+ul li:hover {
+  background: #282828;
+  border-left: 4px solid #f58220;
+  color: white;
+}
+
+ul li [class*='icon-']:before {
+  font-size: 20px;
+  margin-right: 20px;
+  position: relative;
+  top: 4px;
+}
+
+ul li:hover [class*='icon-']:before {
+  color: white;
+}

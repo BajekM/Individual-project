@@ -1,0 +1,36 @@
+.general-statistic .charts-options {
+  @include centering;
+}
+
+.charts-options .dot {
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  content: '';
+}
+
+
+.charts-options .dot-1 {
+  background-color: $signups-color;
+}
+
+.charts-options .dot-2 {
+  background-color: $button-color;
+}
+
+.charts-options .dot-3 {
+  background-color: $earned-color;
+}
+
+.charts-options .option {
+  margin: 40px 40px;
+  border-radius: 10px;
+  color: #86A5B9;
+  padding: 20px;
+}
+
+.charts-options .active {
+  color: $sidebar-font-color;
+  background-color: $chart-option-background;
+}
