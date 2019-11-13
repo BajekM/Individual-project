@@ -19,8 +19,15 @@ table {
   tr:hover {
     background-color: $chart-option-background;
 
-    span {
-      display: block;
+
+    .icon-links {
+      color: $button-color;
+      font-size: 20px;
+    }
+
+    .icon-trash {
+      font-size: 20px;
+      color: $sidebar-font-color;
     }
   }
 }
@@ -28,19 +35,23 @@ table {
 .name-cell {
   width: 50%;
   color: #868686;
-  font-size: 20px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 .link-cell {
-  width: 40%;
+  width: 35%;
   color: $login-color;
-  font-size: 20px;
+  font-size: 15px;
   text-decoration: underline;
 }
 
+.link-cell a {
+  cursor: pointer;
+}
+
 .icon-cell {
-  width: 10%;
+  width: 15%;
   padding: 0;
 
   .icons-table-container {
@@ -49,18 +60,18 @@ table {
 
   span {
     padding: 15px;
-    display: none;
+    color: transparent;
     cursor: pointer;
   }
 
   .icon-links {
-    color: $button-color;
+    color: transparent;
     font-size: 20px;
   }
 
   .icon-trash {
     font-size: 20px;
-    color: $sidebar-font-color;
+    color: transparent;
   }
 }
 

@@ -10,4 +10,12 @@
 
 .top-menu .row div {
   @include centering;
+  height: 66.8px;
+  padding: 30px;
+}
+
+.top-menu div .menu-inner {
+  position: absolute;
+  right: 0;
+  padding: 0;
 }

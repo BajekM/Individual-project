@@ -1,7 +1,7 @@
 @import "variables";
+@import "mixins";
 @import "layout";
 @import "normalize";
-@import "mixins";
 @import "glyphter";
 
 /* Components */
@@ -16,6 +16,8 @@
 @import "components/dataFields";
 @import "components/_chartsOptions";
 @import "components/linksTableInGeneral";
+@import "components/detailTable";
+@import "components/pagination";
 
 // /* Sections */
 // @import "section/registration_form";
@@ -23,6 +25,7 @@
 @import "sections/top-menu";
 @import "sections/generalStatics";
 @import "sections/linksInGeneral";
+@import "sections/personalData";
 
 // /* Pages / Views */
 // @import "pages/registration";

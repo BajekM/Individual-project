@@ -1,0 +1,29 @@
+.personal-data {
+  button {
+    padding: 10px 30px;
+    margin: 10px auto;
+  }
+
+  form {
+    div {
+      @include centering;
+    }
+
+  }
+
+  label {
+    color: $sidebar-font-color;
+    font-size: 18px;
+    display: inline-block;
+    width: 170px;
+    font-weight: 600;
+  }
+
+  input {
+    width: 350px;
+    padding: 10px 20px;
+    margin: 15px;
+    border-radius: 5px;
+    border: 0.6px solid $sidebar-font-color;
+  }
+}

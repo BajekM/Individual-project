@@ -1,0 +1,49 @@
+.detail-table-container {
+  margin: 0 15px;
+
+  thead {
+    color: $sidebar-font-color;
+
+    th{
+      color: $sidebar-font-color;
+
+      div {
+        display: inline-block;
+        padding: 5px;
+        @include centering;
+        width: 70%;
+        margin: 0 auto;
+      }
+
+      span {
+        color: transparent;
+        margin: 10px;
+        font-size: 10px;
+      }
+
+    }
+
+    tr:hover {
+      background: transparent;
+    }
+
+    th:hover div {
+      height: 65%;
+      color: black;
+      background: $chart-option-background;
+      border-radius: 5px;
+
+      span{
+        color: $sidebar-font-color;
+      }
+    }
+  }
+
+  tbody {
+    td {
+      text-align: center;
+    }
+  }
+
+
+}

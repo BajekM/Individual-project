@@ -1,34 +1,59 @@
 .sidebar {
   background: $sidebar-background-color;
   position: fixed;
-  height: 100vh;
+  height: 100%;
+  width: 250px;
   z-index: 200;
+  padding-left: 0;
 }
 
-h1 {
+.just-do-it {
   font-family: 'Kalam', cursive;
   font-weight: lighter;
   color: white;
   padding: 15px;
+  display: inline-block;
+  font-size: 30px;
+  margin-top: 10px;
 }
 
-h4 {
+.manager {
   color: $sidebar-font-color;
   font-size: 15px;
   text-transform: uppercase;
+  padding: 15px;
 }
 
 .sidebar-top {
   position: relative;
+  height: 66.8px;
 }
 
-.sidebar-top span {
+.sidebar-top .fas {
   color: #999999;
-  width: 16px;
+  width: 22px;
   position: absolute;
-  right: 30px;
+  right: 35px;
+  font-size: 30px;
+  top: 25px;
 }
 
 aside hr {
   border-top: 0.6px solid #2f2f2f;
+}
+
+
+@media (max-width: 768px) {
+  .sidebar-inner {
+    display: none;
+  }
+
+  .sidebar {
+    height: 68px;
+  }
+
+  .inner {
+    width: auto;
+    left: 0;
+  }
 }
