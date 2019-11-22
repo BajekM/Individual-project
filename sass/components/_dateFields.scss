@@ -27,6 +27,7 @@
 .date-refresh {
   @include centering;
   margin: 70px 0;
+  overflow-x: auto;
 }
 
 .date-refresh .refresh {

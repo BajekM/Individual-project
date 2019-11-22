@@ -1,5 +1,5 @@
 .top-menu {
-  width: 88%;
+  width: calc(100% - 250px);
   position: fixed;
   right: 0;
   border-bottom: 1px solid $sidebar-font-color;
@@ -18,4 +18,17 @@
   position: absolute;
   right: 0;
   padding: 0;
+  float: right;
+}
+
+@media (max-width: 800px) {
+  .top-menu .row div {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-menu div .menu-inner {
+    display: none;
+  }
 }

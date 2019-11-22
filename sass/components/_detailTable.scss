@@ -1,5 +1,10 @@
 .detail-table-container {
   margin: 0 15px;
+  overflow-x: auto;
+
+  table {
+    width: 100%;
+  }
 
   thead {
     color: $sidebar-font-color;

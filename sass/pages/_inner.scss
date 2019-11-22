@@ -22,3 +22,9 @@ body {
 .inner section.visible {
   display: block;
 }
+
+@media (max-width: 768px) {
+  .inner {
+    width: 100%;
+  }
+}

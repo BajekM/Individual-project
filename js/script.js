@@ -1,28 +1,33 @@
 const links = document.querySelectorAll('.sidebar ul li');
-console.log('Links', links);
-const sections = document.querySelectorAll('section');
-console.log('Sections',sections);
 
-
-function update() {
+function disactivate() {
   const activeLink = document.querySelector('.sidebar ul li.active');
-  console.log('Desavtivated link', activeLink);
   activeLink.classList.remove('active');
   const activeSection = document.querySelector('section.visible');
   activeSection.classList.remove('visible');
-  console.log('Desactivated section', activeSection);
 }
-
-
 
 for (let singleLink of links) {
   singleLink.addEventListener('click', function() {
     const clickedElement = this;
-    update();
+    disactivate();
     clickedElement.classList.add('active');
-    const target = clickedElement.getAttribute('target');
+    const target = clickedElement.getAttribute('date-target');
     const targetSection = document.querySelector(target);
     targetSection.classList.add('visible');
 
   });
 }
+
+
+function toggleMenu() {
+  const menu = document.querySelector('.sidebar-inner');
+  console.log('menu', menu);
+  menu.classList.toggle('show');
+  const sidebar = document.querySelector('.sidebar');
+  sidebar.classList.add('fullHeight');
+}
+
+document.querySelector('.hamburger').addEventListener('click', function() {
+  toggleMenu();
+});

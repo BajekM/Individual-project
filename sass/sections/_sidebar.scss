@@ -36,16 +36,48 @@
   right: 35px;
   font-size: 30px;
   top: 25px;
+  cursor: pointer;
 }
 
 aside hr {
-  border-top: 0.6px solid #2f2f2f;
+  border: 0.6px solid #2f2f2f;
+}
+
+.sidebar .menu-inner {
+  display: none;
+}
+
+.sidebar .menu-inner div{
+  width: 100%;
+  text-align: center;
+  margin: 30px auto;
+
+  .money-amount {
+    color: $sidebar-font-color;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .bell-and-out {
+    font-size: 20px;
+  }
 }
 
 
 @media (max-width: 768px) {
-  .sidebar-inner {
+  .sidebar .sidebar-inner {
     display: none;
+  }
+
+  .sidebar-inner.show {
+    display: block;
+    background: $sidebar-background-color;
+    margin-top: -16px;
+  }
+
+  .sidebar.fullHeight {
+    height: 100%;
   }
 
   .sidebar {
@@ -55,5 +87,9 @@ aside hr {
   .inner {
     width: auto;
     left: 0;
+  }
+
+  .sidebar .menu-inner{
+    display: block;
   }
 }

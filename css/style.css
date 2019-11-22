@@ -1097,9 +1097,14 @@ button {
   background-color: #f3f3f1;
 }
 
+.table-container {
+  overflow: auto;
+}
+
 table {
-  width: 100%;
+  width: 800px;
   border-spacing: 0;
+  margin: 0 auto;
 }
 
 table tr {
@@ -1176,6 +1181,11 @@ table tr:hover .icon-trash {
 
 .detail-table-container {
   margin: 0 15px;
+  overflow-x: auto;
+}
+
+.detail-table-container table {
+  width: 100%;
 }
 
 .detail-table-container thead {
@@ -1296,15 +1306,45 @@ table tr:hover .icon-trash {
   right: 35px;
   font-size: 30px;
   top: 25px;
+  cursor: pointer;
 }
 
 aside hr {
-  border-top: 0.6px solid #2f2f2f;
+  border: 0.6px solid #2f2f2f;
+}
+
+.sidebar .menu-inner {
+  display: none;
+}
+
+.sidebar .menu-inner div {
+  width: 100%;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.sidebar .menu-inner div .money-amount {
+  color: #868686;
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.sidebar .menu-inner div .bell-and-out {
+  font-size: 20px;
 }
 
 @media (max-width: 768px) {
-  .sidebar-inner {
+  .sidebar .sidebar-inner {
     display: none;
+  }
+  .sidebar-inner.show {
+    display: block;
+    background: #191919;
+    margin-top: -16px;
+  }
+  .sidebar.fullHeight {
+    height: 100%;
   }
   .sidebar {
     height: 68px;
@@ -1313,10 +1353,13 @@ aside hr {
     width: auto;
     left: 0;
   }
+  .sidebar .menu-inner {
+    display: block;
+  }
 }
 
 .top-menu {
-  width: 88%;
+  width: calc(100% - 250px);
   position: fixed;
   right: 0;
   border-bottom: 1px solid #868686;
@@ -1340,6 +1383,19 @@ aside hr {
   position: absolute;
   right: 0;
   padding: 0;
+  float: right;
+}
+
+@media (max-width: 800px) {
+  .top-menu .row div {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-menu div .menu-inner {
+    display: none;
+  }
 }
 
 .general-statistic hr {
@@ -1347,9 +1403,9 @@ aside hr {
 }
 
 .general-statistic .charts {
-  position: relative;
-  left: 423px;
-  top: 30px;
+  margin: 40px auto;
+  text-align: center;
+  display: block;
 }
 
 .general-statistic .image-wrapper {
@@ -1359,21 +1415,22 @@ aside hr {
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
+  overflow-x: auto;
 }
 
 .add-new {
   margin: 20px auto;
 }
 
-.table-container {
+.general-statistic .table-container {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-align: center;
       align-items: center;
   -ms-flex-pack: center;
       justify-content: center;
-  width: 800px;
   margin: 10px auto;
+  overflow-x: auto;
 }
 
 .personal-data button {
@@ -1428,5 +1485,11 @@ body {
 
 .inner section.visible {
   display: block;
+}
+
+@media (max-width: 768px) {
+  .inner {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

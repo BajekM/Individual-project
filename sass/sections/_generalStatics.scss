@@ -3,12 +3,14 @@
 }
 
 .general-statistic .charts {
-  position: relative;
-  left: 423px;
-  top: 30px;
+  margin: 40px auto;
+  text-align: center;
+  display: block;
 }
 
 
 .general-statistic .image-wrapper {
   @include centering;
+  overflow-x: auto;
 }
+
