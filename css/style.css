@@ -1415,6 +1415,7 @@ aside hr {
 @media (max-width: 768px) {
   .sidebar .sidebar-inner {
     display: none;
+    overflow-y: auto;
   }
   .sidebar-inner.show {
     display: block;

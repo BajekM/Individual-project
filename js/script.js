@@ -1,3 +1,4 @@
+/*Pages*/
 const links = document.querySelectorAll('.sidebar ul li');
 
 function disactivate() {
@@ -19,7 +20,7 @@ for (let singleLink of links) {
   });
 }
 
-
+/*Menu*/
 function toggleMenu() {
   const menu = document.querySelector('.sidebar-inner');
   menu.classList.toggle('show');
@@ -68,6 +69,7 @@ for (let quit of quits) {
   });
 }
 
+/*Modals*/
 var ctx = document.getElementById('myChart').getContext('2d');
 var chart = new Chart(ctx, {
   // 1
