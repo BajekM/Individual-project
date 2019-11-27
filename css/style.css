@@ -997,6 +997,7 @@ ul li:hover [class*='icon-']:before {
   -ms-flex-pack: center;
       justify-content: center;
   margin: 70px 0;
+  overflow-x: auto;
 }
 
 .date-refresh .refresh {
@@ -1268,6 +1269,67 @@ table tr:hover .icon-trash {
   background: #f3f3f1;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  overflow: auto;
+  padding: 30px;
+  display: none;
+}
+
+.overlay.show {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.overlay::webkit-scrollbar {
+  display: none;
+}
+
+.modal {
+  max-width: 600px;
+  margin: auto;
+  background-color: #ffffff;
+  position: relative;
+  padding: 30px;
+  display: none;
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+}
+
+.cancel {
+  background: grey;
+}
+
+.buttons-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: right;
+      justify-content: right;
+}
+
 .sidebar {
   background: #191919;
   position: fixed;
@@ -1334,6 +1396,22 @@ aside hr {
   font-size: 20px;
 }
 
+.manager-inner {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.manager-inner .manager-name {
+  color: #80bfca;
+  font-size: 14px;
+  display: block;
+  padding: 10px;
+}
+
 @media (max-width: 768px) {
   .sidebar .sidebar-inner {
     display: none;
@@ -1342,12 +1420,25 @@ aside hr {
     display: block;
     background: #191919;
     margin-top: -16px;
-  }
-  .sidebar.fullHeight {
-    height: 100%;
+    height: 100vh;
   }
   .sidebar {
     height: 68px;
+    width: 100px;
+  }
+  .sidebar .sidebar-top {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+        align-items: center;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+  .sidebar .just-do-it {
+    display: none;
+  }
+  .sidebar .hamburger {
+    position: static;
   }
   .inner {
     width: auto;
@@ -1355,6 +1446,15 @@ aside hr {
   }
   .sidebar .menu-inner {
     display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .hidden {
+    display: none;
+  }
+  .short {
+    height: 68px;
   }
 }
 
@@ -1393,7 +1493,7 @@ aside hr {
 }
 
 @media (max-width: 768px) {
-  .top-menu div .menu-inner {
+  .top-menu {
     display: none;
   }
 }
@@ -1489,6 +1589,12 @@ body {
 
 @media (max-width: 768px) {
   .inner {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .inner.full-width {
     width: 100%;
   }
 }

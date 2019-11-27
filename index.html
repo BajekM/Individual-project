@@ -10,6 +10,16 @@
   <title>Solo Project</title>
 </head>
 <body>
+  <div class="overlay" id="overlay">
+    <div class="modal" id="myModal">
+      <div class="btn-close js--close-modal">x</div>
+        <h4>Do you really wanna quit?</h4>
+        <div class="buttons-wrapper">
+          <button class="js--close-modal quit">Quit</button>
+          <button class="js--close-modal cancel">Cancel</button>
+        </div>
+    </div>
+  </div>
   <aside class="sidebar">
     <div class="sidebar-top">
       <span class="just-do-it">Just do it</span>
@@ -28,6 +38,10 @@
         </ul>
         <hr>
         <h2 class="manager">Your Manager</h2>
+        <div class="manager-inner">
+          <img src="/images/manager.png" alt="manager">
+          <span class="manager-name">Michael E.</span>
+        </div>
         <hr>
         <div class="menu-inner">
           <div class="money">
@@ -123,7 +137,8 @@
       </div>
     </div>
     <div class="image-wrapper">
-      <img src="images/wykres.png" alt="wykres">
+
+      <canvas id="myChart"></canvas>
     </div>
     </section>
     <section class="links-in-general">
@@ -604,6 +619,7 @@
 
     </section>
   </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
